@@ -36,7 +36,7 @@
 //  obj.bar=2
 
 const speed = 'quick'
-console.log("The ${speed} brown fox jumps over the lazy dog")
+console.log(`The ${speed} brown fox jumps over the lazy dog`)
 
 sum()
 function sum(a,b){
@@ -69,3 +69,64 @@ function add(x, y){
   }
   const z = add(1, 2);
 console.log(z);
+
+const getAdress = () => ({city: "Hanoi"})
+console.log(getAdress)
+getAdress()
+
+const myName= "Hello!"
+console.log("My name is Năng"  +  myName  +  "Happy\nHi!")
+
+console.log(`Hello, myname is Nắng
+ ${myName}`)
+
+//  const sum = (a,b) =>{
+//     return a+b;
+// }
+// export {sum}
+// sum()
+
+// function mystery(...params) {
+    
+// 	return params
+// }
+// // let a = mystery(1, 23, 4);
+// mystery()
+
+// let a = 12, b = 3;
+// [a, b] = [b, a];
+// const obj = {
+// 	name: "MindX"
+// }
+// const sayHello = (x) => {
+// 	let {name} = x
+//   name = "Code Intensive"
+// }
+// console.log(sayHello(obj))
+// sayHello(obj)
+// const arr = [1, 2, 3, 4, 5]
+// const total = arr.filter(item => item % 2 === 0)
+// 								 .reduce((value, item) => value + item , 10)
+
+// const input ={string:"abcde"}
+// const output ={string:"edcba"}
+
+// console.log(input)
+
+// const sum = (a,b) =>{ a+b
+// console.log(sum)}
+// sum()
+
+
+// 1. Viết các function sum , sub , mul ,div trong file cal.js 
+// -Tạo 1 file index.js viết 1 chương trình đơn giản , nhập 2 số a và b 
+// và nhập phép tính của người dùng
+// -In kết quả ra bằng console.log
+
+// 2. Cho 1 array:
+//  arr = [1 ,2 , 3 , 5 , 8 , 13 , 21]
+
+// a,Lọc ra các số chẵn?
+// b,Tìm các số chia hết cho 5?
+// c,Tìm xem trong mãng này có các số lớn hơn 4 hay ko?
+// d, Tính tổng các số?

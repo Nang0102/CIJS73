@@ -23,4 +23,4 @@ const number=[1,2,3,4,5,6,7,8]
 const total = number.reduce((total, item)=>{
     return total + item;
 },0) //nhận vào 2 tham số thay vì chỉ 1, cả 2 tham số đều có ý nghĩa
-console.log(sum);
+console.log(total);

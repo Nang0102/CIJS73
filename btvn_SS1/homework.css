@@ -1,0 +1,45 @@
+.input {
+    border-radius: 8px;
+    height: 15px;
+    padding: 10px;
+}
+
+#reseach {
+    width: 15%;
+}
+
+#add,
+#search,
+#remove {
+    height: 30px;
+    padding: 5px 15px;
+    border: 0 none;
+    color: white;
+    background-color: rgb(74, 74, 236);
+}
+
+.text1,
+.text2 {
+    padding: 15px;
+    margin: 15px;
+}
+
+.container1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.container item {
+    display: inline-block;
+    font-size: 20px;
+}
+
+.item {
+    height: 10px;
+    background-color: rgb(155, 155, 161);
+    display: inline-flex;
+    margin: 25px;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+}
