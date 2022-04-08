@@ -3,7 +3,7 @@ export const TodoList = (props) => {
   // const {text}=props
   console.log(props.text);
   return (
-    <div>
+    <div >
       <ul>
         <li className="text"> Clean up bedroom </li> <li> Buy some milk </li>
       </ul>{" "}

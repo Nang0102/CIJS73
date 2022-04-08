@@ -29,7 +29,7 @@
 // const arr = []
 // arr.push(1)
 // console.log("arr:", arr)
- 
+
 // const c=1
 // console.log("c:", c)
 //  const obj = {foo: 1}
@@ -39,43 +39,45 @@ const speed = 'quick'
 console.log(`The ${speed} brown fox jumps over the lazy dog`)
 
 sum()
-function sum(a,b){
-    console.log("adding 2 number")
-    return a+b}
 
-const multi = function(a,b){
+function sum(a, b) {
+    console.log("adding 2 number")
+    return a + b
+}
+document.getElementById("main").innerHTML = sum(4, 3);
+const multi = function(a, b) {
     console.log("multi:");
-    return a*b;
+    return a * b;
 }
 multi()
 
-const sub = (a,b) => {
+const sub = (a, b) => {
     console.log("subtracting 2 numbers");
-    return a-b;
+    return a - b;
 };
-const d=sub(4,2);
+const d = sub(4, 2);
 console.log(d)
 sub() // k có binding this va supper
 
-const devideBy = (a,b) => a/b
-const e= devideBy(6,3)
+const devideBy = (a, b) => a / b
+const e = devideBy(6, 3)
 console.log(e)
 devideBy()
 
 
-function add(x, y){
-    const  sum = x + y;
+function add(x, y) {
+    const sum = x + y;
     return sum;
-  }
-  const z = add(1, 2);
+}
+const z = add(1, 2);
 console.log(z);
 
-const getAdress = () => ({city: "Hanoi"})
+const getAdress = () => ({ city: "Hanoi" })
 console.log(getAdress)
 getAdress()
 
-const myName= "Hello!"
-console.log("My name is Năng"  +  myName  +  "Happy\nHi!")
+const myName = "Hello!"
+console.log("My name is Năng" + myName + "Happy\nHi!")
 
 console.log(`Hello, myname is Nắng
  ${myName}`)
@@ -87,7 +89,7 @@ console.log(`Hello, myname is Nắng
 // sum()
 
 // function mystery(...params) {
-    
+
 // 	return params
 // }
 // // let a = mystery(1, 23, 4);
@@ -130,3 +132,19 @@ console.log(`Hello, myname is Nắng
 // b,Tìm các số chia hết cho 5?
 // c,Tìm xem trong mãng này có các số lớn hơn 4 hay ko?
 // d, Tính tổng các số?
+
+const arr = [1, 2, 3, 5, 8, 13, 21]
+
+const myFilter = arr.filter((item) => {
+    return item % 2 === 0
+    console.log(myFilter)
+
+})
+
+
+
+// const filterArr = [1,2,3,4,5,6]
+// const filterArr2 = filterArr.filter((item)=>{
+//     return item% 2===0;
+// });
+// console.log(filterArr,filterArr2)

@@ -1,34 +1,45 @@
-import "./App.css";
-import { Button } from "../../big-assignment/src/Button";
 
-function App(props) {
+import Content from "./component/HomeWorkSs9/Content";
+import Footer from "./component/HomeWorkSs9/Footer";
+import Header from "./component/HomeWorkSs9/Header";
+import ThemeContext from "./component/HomeWorkSs9/ThemeContext";
+
+// import Content from "./component/Context/content";
+// import Footer from "./component/Context/Footer";
+// import "./component/Context/Header"
+// import Header from "./component/Context/Header";
+// import SideBar from "./component/Context/SideBar";
+// import ThemeContext from "./component/Context/ThemeContext";
+function App() {
   return (
+    <ThemeContext.Provider>
     <div>
-      <div className="flex-container" style={{}} onclick>
-        <Button customStyle={{ color: "#fff", backgroundColor: "purple" }}>
-          ADD NEW EXPENSE{" "}
-        </Button>{" "}
-      </div>{" "}
-      <div className="container">
-        <div className="inner"></div>{" "}
-      </div>{" "}
+    {/* <ThemeContext.Provider value ={{ theme:"Light"}}>
+  
+    <div style={{ height:"100vh", display:"flex", flexDirection:"column"}}>
+      <Header/>
+    <div style={{ display:"flex", flex:1, alignItems:"stretch"}}>
+    <Content/>
+    <SideBar/>
+
     </div>
-  );
-}
-// const App = () => {
-// 	const x = 1;
-// 	const y = 2;
-// 	return (
-// 		<div>
-// 			<Sum a={x} b={y} />
-// 		</div>
-// 	)
-// }
+    </div>
+   <Footer/>
+    </ThemeContext.Provider> */}
+    <div  >
+      <Header/>
+      </div>
+    <div >
+    <Content/>
+    </div>
+    <div  >
+    <Footer/>
+    </div>
+    </div>
+    </ThemeContext.Provider>
+ 
+  ) };
 
-// const Sum = (props) => {
-// 	console.log(props) // {a: 1, b: 2}
 
-// 	return <div>The value is: {props.a + props.b}</div>
-// }
 
 export default App;
