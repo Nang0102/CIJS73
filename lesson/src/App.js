@@ -12,7 +12,7 @@ import ThemeContext from "./component/HomeWorkSs9/ThemeContext";
 // import ThemeContext from "./component/Context/ThemeContext";
 function App() {
   return (
-    <ThemeContext.Provider>
+    <ThemeContext.Provider value={{theme:"change"}}>
     <div>
     {/* <ThemeContext.Provider value ={{ theme:"Light"}}>
   
